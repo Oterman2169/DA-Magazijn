@@ -14,18 +14,12 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema::create('Inkopen', function (Blueprint $table) {
+        Schema::create('Lading', function (Blueprint $table) {
             $table->increments('Lading-ID')->unique()->primary();
-            $table->increments('Serienummer')->unique();
-            $table->integer('Rek-nummer')->unique();
-            $table->integer('InkoopAantal');
-            $table->double('InkoopPrijs');
-            $table->date('DatumInkoop');
-            $table->double('VerkoopPrijs');
-            $table->string('ProductNaam');
-            $table->string('ProductOmschrijving');
-            $table->date('VervalDatum');
+            $table->date('DatumAankomst');
+            $table->string('LeverancierVoorNaam');
             $table->string('LeverancierNaam');
+            $table->string('Bedrijf');
             $table->timestamps();
         });
     }
@@ -38,5 +32,7 @@ return new class extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('Lading');
+
     }
 };

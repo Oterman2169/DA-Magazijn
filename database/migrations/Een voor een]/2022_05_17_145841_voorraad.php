@@ -13,9 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('Users', function (Blueprint $table) {
-            $table->text('Role')->unique();
-            $table->text('Password');
+        //
+        Schema::create('Voorraad', function (Blueprint $table) {
+            $table->integer('Lading-ID');
+            $table->string('SerieNummer')->unique()->primary();
+            $table->double('InkoopAantal');
+            $table->double('InkoopPrijs');
+            $table->double('VerkoopPrijs');
+            $table->double('GemiddeldePrijs'); 
             $table->timestamps();
         });
     }
@@ -28,6 +33,6 @@ return new class extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('Users');
+        Schema::dropIfExists('Voorraad');
     }
 };
