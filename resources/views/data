@@ -1,0 +1,17 @@
+
+<!-- @foreach($data as $data)
+<tbody>
+    <tr>
+        <td><div class="cus_h3-3 ">{{$data->FirstName}}<br>{{$data->LastName}}</div> </td>
+        <td><div class="cus_h3-3 ">{{$data->Treatment}} <br> {{$data->SpecifiedTreatment}}</div></td>
+        <td><div class="cus_h3-3 ">{{$data->Date}}</div></td>
+        <td><div class="cus_h3-3 ">{{$data->Time}}</div></td>
+        <td><div class="cus_h3-3 ">{{$data->Email}}</div></td>
+        <td><div class="cus_h3-3 ">{{$data->PhoneNumber}}</div></td>
+        <td><div class="cus_h3-3 "><a class="cus_edit " href={{"AcceptOneOrder/".$data['ID']}}> Accept </a></div> </td>
+        <td><div class="cus_h3-3 "><a class="cus_edit" href={{"UpdatePendingOrder/".$data['ID']}}>Edit</a></div> </td>
+        
+    </tr>
+    </tbody>   
+@endforeach
+</table> -->

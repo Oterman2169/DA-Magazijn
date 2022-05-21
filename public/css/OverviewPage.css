@@ -1,0 +1,77 @@
+/* Algemeen */
+*{
+    font-family: 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body{
+    background-color: #43698C;
+}
+
+.CusH2{
+    font-size: 2rem;
+    padding: 50px 30px 0 30px;
+}
+.CusH1{
+    font-size: 4rem;
+    padding: 30px 30px 0 30px;
+}
+.cus_p{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+.flex{
+    display: flex;
+}
+/* NAV-BAR */
+.navigation{
+    position: absolute;
+    left: 80%;
+    top:10%
+}
+
+.link-design{
+    text-decoration: none;
+}
+.nav-links{
+    padding-top: 2em;
+    
+}
+
+.input-container{
+    border-radius: 3px;
+    border: none;
+}
+
+.search{
+    display: block;
+    padding: 43px 30px 0 30px;
+}
+
+/* Table */
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    align-items: center;
+    padding-top: 3rem;
+  }
+  
+  th {
+    color: white;
+  }
+  
+  th,
+  td {
+    width: 150px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 5px;
+
+  }
+  td{
+      height: 100px;
+  }

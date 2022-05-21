@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Navigation;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/Register-Products',[Navigation::class,'RegisterContainers'])->name('RegisterContainers');
+Route::get('/Products-Overzicht',[Navigation::class,'ProductOverzicht'])->name('ProductOverzicht');

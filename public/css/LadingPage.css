@@ -1,0 +1,76 @@
+*{
+    font-family: 'Arvo', serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body{
+    background-color: #43698C;
+}
+
+.CusH2{
+    font-size: 2rem;
+    padding: 50px 30px 0 30px;
+}
+.CusH1{
+    font-size: 4rem;
+    padding: 30px 30px 0 30px;
+}
+.BonHeader{
+    display: flex;
+    padding: 10px 30px 30px 30px;;
+}
+.top-section{
+padding: 0 30px;
+}
+.bottom-section{
+    padding: 30px 30px;
+}
+.item-container{
+    padding: 0.5em;
+
+}
+.black{
+    color: #000;
+}
+.buttons{
+    padding-top: 20px;
+}
+.button-design{
+    border-radius: 5px;
+    width: 8em;
+    height: 2.5em;
+border:none;
+cursor: pointer;
+}
+.red{
+    background-color: #B11C1C;
+}
+.green{
+    background-color: #219417;
+    
+}
+
+.discription-design{
+    width:25em;
+    height:7em;
+}
+.flex{
+    display: flex;
+}
+
+
+/* NAV-BAR */
+.navigation{
+    position: absolute;
+    left: 80%;
+    top:10%
+}
+
+.link-design{
+    text-decoration: none;
+}
+.nav-links{
+    padding-top: 2em;
+    
+}
